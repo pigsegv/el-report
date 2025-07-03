@@ -19,6 +19,8 @@
 \renewcommand\boldmath{\@nomath\boldmath\mathversion{bold}}}
 \makeatother
 
+\graphicspath{{.}}
+
 \def\BibTeX{{\rm B\kern-.05em{\sc i\kern-.025em b}\kern-.08em
     T\kern-.1667em\lower.7ex\hbox{E}\kern-.125emX}}
 
@@ -28,7 +30,7 @@
 \doi{10.1109/ACCESS.2024.0429000}
 
 \title{Increasing the Strength of Pervious Concrete While Maintaining 
-       Permability}
+       its Permability}
 \author{
     \uppercase{Pranav V}\authorrefmark{1}, \uppercase{Abhay V}\authorrefmark{1}, 
     \uppercase{Suyash J}\authorrefmark{1}, \uppercase{Soham S}\authorrefmark{2},
@@ -141,8 +143,8 @@ The proportions for the rest of the materials used are given in table
 \ref{table:mix-design}.
 
 \section{Testing Method}
-The samples were tested after 14 and 28 days for tensile and compressive 
-strenghts, and after 28 days for permeability.
+The samples were tested after 14 and 28 days for its tensile strength, its
+compressive strength, and for its permeability.
 
 \subsection{Compressive Strength}
 The sample was placed in the universal testing machine (UTM) on one of its 
@@ -162,10 +164,22 @@ sample.
 \subsection{Permeability}
 The tensile strength was found using a makeshift falling head permeameter.
 By measuring the time taken for the head to move from a height $h_1$ down to
-$h_2$, the permeability $k$ can be calculated using the formula 
+$h_2$, the permeability $k$ (in $mm/s$) can be calculated using the formula 
 \[k = \frac{aL}{At} \ln{\frac{h_1}{h_2}}\] where $a$ is the cross-sectional area
 of the standpipe, $t$ is the time taken for the head to fall from $h_1$ to 
-$h-2$, and $L$ and $A$ are the dimensions of the sample.
+$h_2$, and $L$ and $A$ are the dimensions of the sample.
+
+\begin{figure}[h]
+    \caption{Sample being tested for tensile strength}
+    \centering
+    \includegraphics[scale=0.15]{tensile}
+\end{figure}
+
+\begin{figure}[h]
+    \caption{Sample being tested for compressive strength}
+    \centering
+    \includegraphics[scale=0.15]{compressive}
+\end{figure}
 
 
 \section{Results}

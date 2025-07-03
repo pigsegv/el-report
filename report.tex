@@ -4,7 +4,7 @@
 \usepackage{algorithmic}
 \usepackage{graphicx}
 \usepackage{textcomp}
-\usepackage{tablefootnote}
+\usepackage{threeparttable}
 
 \usepackage{bm}
 \makeatletter
@@ -117,21 +117,25 @@ cementitious material which was a mixture of cement and fly-ash in the ratio of
 and polypropylene fibres. 
 \
 \begin{table}
-    \caption{\textbf{Mix Design}}
-    \label{table:mix-design}
-    \setlength{\tabcolsep}{20pt}
-    \def\arraystretch{1.5}%
-    \begin{tabular}{ l r  r }
-        \hline
-        & \multicolumn{1}{c}{Batch 1} & \multicolumn{1}{c}{Batch 2} \\
-        \hline
-        Cement, $kg/m\textsuperscript{3}$ & 280 & 280 \\
-        Fly-ash, $kg/m\textsuperscript{3}$ & 70 & 70 \\
-        Water, $kg/m\textsuperscript{3}$ & 119 & --- \\
-        SP, \%\footnote{1} & -- & 0.5 \\
-        \hline
-        \multicolumn{3}{l}{\footnote{1}{hi}}
-    \end{tabular} 
+    \begin{threeparttable}
+        \caption{\textbf{Mix Design}}
+        \label{table:mix-design}
+        \setlength{\tabcolsep}{20pt}
+        \def\arraystretch{1.5}%
+        \begin{tabular}{ l r  r }
+            \hline
+            & \multicolumn{1}{c}{Batch 1} & \multicolumn{1}{c}{Batch 2} \\
+            \hline
+            Cement, $kg/m\textsuperscript{3}$ & 280 & 280 \\
+            Fly-ash, $kg/m\textsuperscript{3}$ & 70 & 70 \\
+            Water, $kg/m\textsuperscript{3}$ & 119 & 95.2 \\
+            SP, $\%$\textsuperscript{1} & --- & 0.5 \\
+            \hline
+        \end{tabular} 
+        \begin{tablenotes}
+            \item[1] of cementitious material
+        \end{tablenotes}
+    \end{threeparttable}
 \end{table}
 \
 The rest of the ingredients are given in table \ref{table:mix-design}.
